@@ -1,0 +1,18 @@
+{
+    "empleados": [{
+            "nombre": "dragon",
+            "img":"../img/dragon.jpg",
+            "antiguedad": 3,
+            "precio":125,
+            "premios": null,
+            "vacaciones": "2 semanas"
+        },       {
+            "nombre": "Veronica Alberi",
+            "edad": 35,
+            "puesto": "Analista",
+            "antiguedad": 5,
+            "premios": 2,
+            "vacaciones": "3 semanas"
+        }
+    ]
+}

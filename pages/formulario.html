@@ -1,0 +1,81 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="proyect academico basado en un juego de cartas basado">
+    <meta name="keyword" content="cartas, imagenes, duelo, juego, entretenido, cards, images, duel, game, entertaining,">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/stylo.css">
+    <title>formulario</title>
+</head>
+<body>
+    <div>
+        <ul id="redesSociales" class="nav nav-pills nav-fill">
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/index.html">inicio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/juego.html">juego</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/catalogo.html">catalogo</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="../pages/usuarios.html">usuarios</a>
+            </li>
+        </ul>
+    </div>
+    <div id="titulo"></div>
+    <div class="container">
+        <div class="row justify-content-center">
+            <div class="col-lg-12 col-xs-12 col-md-8">
+                <div class="well well-sm">
+                    <form id="formulario" class="form-horizontal" method="post" action="#" method="GET">
+                        <fieldset>
+                            <legend class="text-center header">
+                                <h3>Para dejarnos comentarios</h3>
+                            </legend>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-user bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <input id="name" name="name" type="text" placeholder="Nombre" class="form-control contacto__input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-envelope-o bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <input id="email" name="email" type="text" placeholder="Dirección de Email" class="form-control contacto__input">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <span class="col-md-1 col-md-offset-2 text-center"><i class="fa fa-pencil-square-o bigicon"></i></span>
+                                <div class="col-md-12">
+                                    <textarea class="form-control" id="message" name="message" placeholder="Ingrese su masaje para nosotros aquí. Nos comunicaremos con usted en un plazo de 2 días hábiles." rows="7"></textarea>
+                                </div>
+                            </div>
+                                <a>Desea recibir publicidad?</a>
+                                <input type="checkbox" name="Aceptar" value="1">
+                            </div>
+                            <div>
+                                <input class="btn btn-primary btn-lg" type="submit" onclick="return enviarFormulario();" name="enviar" value="enviar">
+                            </div>
+                            <div class="btn btn-primary btn-lg" style="font-size:30px"style="border: solid 2px black" id="error"></div>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <footer class="bg-light text-center text-lg-start"id="principal" class="position-relative overflow-hidden p-1 p-md-1 m-md-3 text-center light">
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2020 Copyright:
+            <a id="mode" class="btn btn-outline-secondary" href="#">Dark Mode</a>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../js/form.js"></script>
+</body>
+</html>
